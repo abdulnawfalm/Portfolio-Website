@@ -1,0 +1,71 @@
+.about {
+    padding: 50px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .about.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .about-content {
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  .about-heading {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: white;
+  }
+  
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .about-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #ccc;
+  }
+  
+  .about-experience {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+  
+  .about-experience p {
+    font-size: 1rem;
+    color: #ccc;
+  }
+  
+  @media (max-width: 768px) {
+    .about-content {
+      padding: 0 20px;
+    }
+  
+    .about-heading {
+      font-size: 2rem;
+    }
+  
+    .about-description {
+      font-size: 1rem;
+    }
+  
+    .about-experience {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
